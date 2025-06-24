@@ -18,8 +18,8 @@ public class EmployeeController {
 
 
     @GetMapping("/employee")
-    public String testKubernetes(){
-        return "Working fine";
+    public ResponseEntity<String> testKubernetes(){
+        return ResponseEntity.ok("Working fine");
     }
     public List<EmployeeDTO> getEmployees(){
         return employeeService.getAllEmployees();
