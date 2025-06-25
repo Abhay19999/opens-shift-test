@@ -21,7 +21,7 @@ public class EmployeeController {
     public ResponseEntity<String> testKubernetes(){
         return ResponseEntity.ok("Working fine");
     }
-    @GetMapping("/jenkins")
+    @GetMapping("/webhook")
     public ResponseEntity<String> testJenkins(){
         return ResponseEntity.ok("jenkins working");
     }
