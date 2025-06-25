@@ -21,6 +21,10 @@ public class EmployeeController {
     public ResponseEntity<String> testKubernetes(){
         return ResponseEntity.ok("Working fine");
     }
+    @GetMapping("/test")
+    public ResponseEntity<String> testJenkins(){
+        return ResponseEntity.ok("jenkins working");
+    }
     public List<EmployeeDTO> getEmployees(){
         return employeeService.getAllEmployees();
     }
