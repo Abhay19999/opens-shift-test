@@ -23,7 +23,7 @@ public class EmployeeController {
     }
     @GetMapping("/webhook")
     public ResponseEntity<String> testJenkins(){
-        return ResponseEntity.ok("GitHub Test working");
+        return ResponseEntity.ok("GitHub Test changes");
     }
     public List<EmployeeDTO> getEmployees(){
         return employeeService.getAllEmployees();
